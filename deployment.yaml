@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rcs 
+  labels:
+    app: rcs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rcs
+  template:
+    metadata:
+      labels:
+        app: rcs
+    spec:
+      containers:
+      - name: rcs
+        image: sjarosz/rcs
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rcs
+  labels:
+    app: rcs
+spec:
+  clusterIP: None
+  ports:
+  - name: http
+    port: 80
+  selector:
+    app: rcs
