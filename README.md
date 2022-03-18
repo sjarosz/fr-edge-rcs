@@ -19,3 +19,7 @@ Edit the conf/ConnectorServer.properties:
     connection to be made.
     
     `connectorserver.connectorServerName`
+    
+# To deploy 
+
+skaffold dev --default-repo <repo-hostname/repo-name>
