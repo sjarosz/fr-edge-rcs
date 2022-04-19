@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: rcs
-        image: sjarosz/rcs
+        image: rcs
         imagePullPolicy: Always
         ports:
         - containerPort: 80

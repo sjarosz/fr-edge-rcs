@@ -15,6 +15,9 @@ COPY . "${INSTALL_DIR}"
 
 RUN chmod 777 /opt/openicf/csv.csv
 
+
+RUN mkdir -p /opt/openicf/logs
+RUN chmod -R 777 /opt/openicf/logs
 WORKDIR /opt/openicf
 
 
